@@ -18,11 +18,13 @@ export class ItemsComponent implements OnInit {
     console.log(this.items)
   }
   public scrollRight(): void {
-    this.widgetsContent.nativeElement.scrollTo({ left: (this.widgetsContent.nativeElement.scrollLeft + 150), behavior: 'smooth' });
+    this.widgetsContent.nativeElement.scrollTo({ left: (this.widgetsContent.nativeElement.scrollLeft + 400), behavior: 'smooth' });
+    console.log(this.widgetsContent.nativeElement.scrollLeft)
   }
 
   public scrollLeft(): void {
-    this.widgetsContent.nativeElement.scrollTo({ left: (this.widgetsContent.nativeElement.scrollLeft - 150), behavior: 'smooth' });
+    this.widgetsContent.nativeElement.scrollTo({ left: (this.widgetsContent.nativeElement.scrollLeft - 400), behavior: 'smooth' });
+    console.log(this.widgetsContent.nativeElement.scrollLeft)
   }
 
 }

@@ -1,32 +1,22 @@
-<!-- <div class="container">
-  <div class="row">
+<div class="bodygroup ">
+ 
+  <div class="container flex-enable">
+  <div >
+    <i  class="left" (click)="scrollLeft()"></i>
+  </div>
+  <div #widgetsContent class="bodysecondgroup" style="margin:0px">
     <div class="col-md-4 well" *ngFor="let item of items">
-      <div class="card card-body"> 
+      <div class="card card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">
           <app-item></app-item>
         </p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div> 
+      </div>
     </div>
   </div>
-</div> -->
-<div class="bodygroup">
-    <div >
-        <button (click)="scrollLeft()">left</button>
-      </div>
-  <div #widgetsContent class="bodysecondgroup">
-      <div class="col-md-4 well" *ngFor="let item of items">
-        <div class="card card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            <app-item></app-item>
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
   <div >
-      <button (click)="scrollRight()">right</button>
+    <i class="right" (click)="scrollRight()"></i>
   </div>
+</div>
 </div>

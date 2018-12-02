@@ -12,30 +12,36 @@
 .navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
     display:none;
 }
-.bodygroup{
-    padding: 0 20px;
-    background-color: #171a29;
-    contain: content;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-
+/* @media(min-width: 1200px){ */
+    .bodygroup{
+        padding: 0 20px;
+        background-color: #171a29;
+        contain: content;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .bodysecondgroup{
+        max-width: 1200px;
+        min-width: 1200px;
+        position: relative;
+        margin: 0 auto;
+        height: 340px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        contain: layout;
+        overflow-x: auto;
+    }
+@media(min-width: 1200px){
+    .bodysecondgroup{
+        overflow-x: hidden;
+    }
 }
-.bodysecondgroup{
-    max-width: 1200px;
-    min-width: 1200px;
-    position: relative;
-    margin: 0 auto;
-    height: 340px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    contain: layout;
-    overflow-x: hidden;
-}
+/* } */

@@ -1,0 +1,40 @@
+.flex-enable{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow-x: auto;
+}
+.flex-enable{
+    margin-left: 35px;
+}
+
+@media(min-width:1200px){
+    i{
+        border:solid #ffffff;
+        border-width: 0 3px 3px 0;
+        padding:3px; 
+        display: inline-block;  
+        cursor: pointer; 
+    }
+    .left{
+        transform: rotate(135deg)
+    }
+    .right{
+        transform: rotate(-45deg)
+    }
+    .flex-enable{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        overflow-x: unset;
+    }
+    .flex-enable{
+        margin-left: 35px;
+    }
+}
