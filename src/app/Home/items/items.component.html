@@ -1,0 +1,32 @@
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-md-4 well" *ngFor="let item of items">
+      <div class="card card-body"> 
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          <app-item></app-item>
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div> 
+    </div>
+  </div>
+</div> -->
+<div class="bodygroup">
+    <div >
+        <button (click)="scrollLeft()">left</button>
+      </div>
+  <div #widgetsContent class="bodysecondgroup">
+      <div class="col-md-4 well" *ngFor="let item of items">
+        <div class="card card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            <app-item></app-item>
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  <div >
+      <button (click)="scrollRight()">right</button>
+  </div>
+</div>
