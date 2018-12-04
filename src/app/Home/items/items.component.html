@@ -1,22 +1,31 @@
 <div class="bodygroup ">
- 
-  <div class="container flex-enable">
-  <div >
-    <i  class="left" (click)="scrollLeft()"></i>
-  </div>
-  <div #widgetsContent class="bodysecondgroup" style="margin:0px">
-    <div class="col-md-4 well" *ngFor="let item of items">
-      <div class="card card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
-          <app-item></app-item>
-        </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1 max-width-arr">
+        <i class="left" (click)="scrollLeft()"></i>
+      </div>
+      
+      <div #widgetsContent class="bodysecondgroup col-md-10 min-width" style="margin:0px">
+        <div class="col-md-4 well" *ngFor="let item of mostImportant">
+          <img class="card-img-top" [src]="item?.ImageUrl" alt="Card image cap">
+          <div class="card card-body">
+            <h5 class="card-title">{{item?.ItemName}}</h5>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-1 max-width-arr">
+        <i class="right" (click)="scrollRight()"></i>
       </div>
     </div>
   </div>
-  <div >
-    <i class="right" (click)="scrollRight()"></i>
-  </div>
 </div>
+<div class="container ">
+  <div class="row">
+    <div class="col-md-5" *ngFor="let item of items">
+      <app-item></app-item>
+    </div>
+  </div>
 </div>

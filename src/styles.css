@@ -14,7 +14,7 @@
 }
 /* @media(min-width: 1200px){ */
     .bodygroup{
-        padding: 0 20px;
+        padding: 10px 20px 10px;
         background-color: #171a29;
         contain: content;
         display: -webkit-box;
@@ -25,11 +25,11 @@
         align-items: center;
     }
     .bodysecondgroup{
-        max-width: 1200px;
-        min-width: 1200px;
+        /* max-width: 1200px;
+        min-width: 1200px; */
         position: relative;
         margin: 0 auto;
-        height: 340px;
+        /* height: 340px; */
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -43,5 +43,16 @@
     .bodysecondgroup{
         overflow-x: hidden;
     }
+}
+.max-width-arr{
+    max-width:20px!important;
+    z-index: 2;
+}
+.min-width{
+    min-width: 94%!important;
+}
+.max-width-arr i{
+    position: absolute;
+    top: 50%;
 }
 /* } */

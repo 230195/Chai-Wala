@@ -10,4 +10,7 @@ export class ItemService{
     getItems(){
         return Items;
     }
+    getImportantItems(){
+        return Items;
+    }
 }

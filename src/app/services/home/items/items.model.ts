@@ -7,4 +7,5 @@ export interface IItems{
         City: string
         State: string
     }
+    ImageUrl:string
 }

@@ -7,8 +7,9 @@ export const Items: IItems[] = [
            Address:'S-200d, badarpur',
            Landmark:'Near Hanuman Mandir',
            City: 'New Delhi',
-           State:'Delhi'
-        }
+           State:'Delhi',
+        },
+        ImageUrl:'assets/images/Chai-Wala.jpg'
     },
     {
         Id:2,
@@ -18,7 +19,8 @@ export const Items: IItems[] = [
            Landmark:'Near Hanuman Mandir',
            City: 'New Delhi',
            State:'Delhi'
-        }
+        },
+        ImageUrl:'assets/images/Chai-Wala.jpg'
     },
     {
         Id:3,
@@ -28,7 +30,8 @@ export const Items: IItems[] = [
            Landmark:'Near Hanuman Mandir',
            City: 'New Delhi',
            State:'Delhi'
-        }
+        },
+        ImageUrl:'assets/images/Chai-Wala.jpg'
     },
     {
         Id:4,
@@ -38,6 +41,7 @@ export const Items: IItems[] = [
            Landmark:'Near Hanuman Mandir',
            City: 'New Delhi',
            State:'Delhi'
-        }
+        },
+        ImageUrl:'assets/images/Chai-Wala.jpg'
     }
 ]
